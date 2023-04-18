@@ -1,0 +1,10 @@
+type Warrior {
+    id: ID!
+    name: String!
+    weapon: String!
+}
+
+type Query {
+    warriors: [Warrior]
+    warrior(id: ID!): Warrior
+}
